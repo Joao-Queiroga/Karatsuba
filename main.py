@@ -24,5 +24,7 @@ def karatsuba(x: int, y: int):
     return p1 * 10 ** (2 * m) + (p3 - p1 - p2) * 10**m + p2
 
 
-print(karatsuba(1234, 5678))
-print("checagem = ", 1234 * 5678)
+x = int(input("Digite o primeiro fator da multiplicação: "))
+y = int(input("Digite o segundo fator da multiplicação: "))
+
+print("%d * %d = %d" % (x, y, karatsuba(x, y)))
