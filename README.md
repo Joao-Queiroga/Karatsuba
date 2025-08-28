@@ -44,3 +44,7 @@ Divide o número em duas partes de acordo com `m`. Se o número tiver menos díg
 git clone https://github.com/SEU_USUARIO/trabalho_karatsuba.git
 cd trabalho_karatsuba
 ```
+2. Execute o programa:
+```sh
+python main.py
+```
