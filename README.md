@@ -48,3 +48,50 @@ cd trabalho_karatsuba
 ```sh
 python main.py
 ```
+
+---
+
+## 📊 Relatório Técnico
+
+### 🔹 Complexidade Ciclomática
+A função `karatsuba` possui três ramos principais:
+- **Caso base**
+- **Divisão e chamadas recursivas**
+- **Combinação dos resultados**
+
+**Fluxo de controle:**
+- Nós (`N`) = 4
+- Arestas (`E`) = 5
+- Componentes (`P`) = 1
+
+Fórmula:
+```
+M = E - N + 2P
+M = 5 - 4 + 2*1 = 3
+```
+
+✅ **Complexidade ciclomática = 3**, indicando três caminhos independentes de execução.
+
+---
+
+### 🔹 Complexidade Assintótica
+- **Tempo:**
+  - Relação de recorrência: `T(n) = 3T(n/2) + O(n)`
+  - Solução: `T(n) = O(n^log₂3) ≈ O(n^1.585)`
+
+- **Espaço:**
+  - Pilha de recursão: `O(log n)`
+  - Espaço extra para divisões: `O(n)`
+
+- **Melhor caso:** números pequenos (1 dígito) → `O(1)`
+- **Caso médio e pior caso:** números grandes → `O(n^1.585)`
+
+---
+
+## 🎯 Conclusão
+O projeto implementa corretamente o algoritmo de Karatsuba em Python, demonstrando eficiência superior para números grandes.
+A documentação apresenta a lógica detalhada, instruções de execução e análises de complexidade.
+
+---
+
+
